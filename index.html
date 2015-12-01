@@ -90,17 +90,17 @@
                      <div style="float: left; width: 200px;">
                         <div id="locationKnown"></div>
                         <div id="options" style="margin: 6px; font-size: 12px;">
-                           <label><input type="checkbox" onchange="setSkins(!$(this).is(':checked'));"><span data-itr="option_no_skins"></span></label>
-                           <label><input type="checkbox" onchange="setNames(!$(this).is(':checked'));"><span data-itr="option_no_names"></span></label>
-                           <label><input type="checkbox" onchange="setColors($(this).is(':checked'));"><span data-itr="option_no_colors"></span></label>
-                           <label><input type="checkbox" onchange="setShowMass($(this).is(':checked'));"><span data-itr="option_show_mass"></span></label>
-                           <label><input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));"><span data-itr="option_dark_theme"></span></label>
-                           <label><input type="checkbox" onchange="setSkipStats($(this).is(':checked'));"><span data-itr="option_skip_stats"></span></label>
+                           <label><input type="checkbox" onchange="setSkins(!$(this).is(':checked'));"><span data-itr="option_no_skins">TOGGLE SKIN</span></label>
+                           <label><input type="checkbox" onchange="setNames(!$(this).is(':checked'));"><span data-itr="option_no_names">TOGGLE NAME</span></label>
+                           <label><input type="checkbox" onchange="setColors($(this).is(':checked'));"><span data-itr="option_no_colors">TOGGLE COLOR</span></label>
+                           <label><input type="checkbox" onchange="setShowMass($(this).is(':checked'));"><span data-itr="option_show_mass">SHOW MASS</span></label>
+                           <label><input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));"><span data-itr="option_dark_theme">DARK THEME</span></label>
+                           <label><input type="checkbox" onchange="setSkipStats($(this).is(':checked'));"><span data-itr="option_skip_stats">SKIP STAT</span></label>
                         </div>
                      </div>
                      <div style="float: right; width: 120px;">
-                        <button onclick="spectate(); return false;" disabled class="btn btn-warning btn-spectate btn-needs-server" data-itr="spectate"></button>
-                        <button onclick="logout(); return false;" class="btn btn-danger btn-logout" data-itr="logout"></button>
+                        <button onclick="spectate(); return false;" disabled class="btn btn-warning btn-spectate btn-needs-server" data-itr="spectate">SPECTATE</button>
+                        <button onclick="logout(); return false;" class="btn btn-danger btn-logout" data-itr="logout">LOGOUT</button>
                      </div>
                      <br clear="both"/>
                      <div id="tags-container">
@@ -109,15 +109,6 @@
                      </div>
                   </div>
                </form>
-               <div id="instructions">
-                  <hr/>
-                  <center><span class="text-muted">
-                     <span data-itr="instructions_mouse"></span><br/>
-                     <span data-itr="instructions_space"></span><br/>
-                     <span data-itr="instructions_w"></span><br/>
-                     </span>
-                  </center>
-               </div>
                <hr/>
             </div>
             <div id="stats" style="display: none;" class="agario-panel">
@@ -221,11 +212,11 @@
          </div>
          <footer class="tosBox right">
             <center>
-               <a href="/privacy.txt" class="text-muted" data-itr="privacy_policy"></a>
+               <a href="/privacy.txt" class="text-muted" data-itr="privacy_policy">PRIVACY</a>
                |
-               <a href="/terms.txt" class="text-muted" data-itr="terms_of_service"></a>
+               <a href="/terms.txt" class="text-muted" data-itr="terms_of_service">TERMS</a>
                |
-               <a href="/changelog.txt" class="text-muted" data-itr="changelog"></a>
+               <a href="/changelog.txt" class="text-muted" data-itr="changelog">CHANGELOG</a>
             </center>
          </footer>
       </div>
