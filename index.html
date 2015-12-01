@@ -9,96 +9,34 @@
       <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta property="fb:app_id" content="677505792353827"/>
-      <meta property="og:title" content="Agar.io "/>
+      <meta property="og:title" content="Igar"/>
       <meta property="og:description" content="The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!"/>
       <meta property="og:url" content="http://agar.io/"/>
       <meta property="og:image" content="http://agar.io/img/1200x630.png"/>
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="630"/>
       <meta property="og:type" content="website"/>
-      <title>Agar.io </title>
+      <title>Igar</title>
       <link rel="canonical" href="http://agar.io/"/>
       <link id="favicon" rel="icon" type="image/png" href="favicon-32x32.png"/>
-      <script type="text/javascript">
-         window['ASSETS_ROOT'] = "";
-
-         function getUrlVars()
-         {
-             var vars = [], hash;
-             var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-             for(var i = 0; i < hashes.length; i++)
-             {
-                 hash = hashes[i].split('=');
-                 vars.push(hash[0]);
-                 vars[hash[0]] = hash[1];
-             }
-             return vars;
-         }
-         if(getUrlVars()['v']!=null)
-         {
-         	window.location = "/v"+getUrlVars()['v'];
-         }
-
-      </script>
-      <script type='text/javascript'>
-         var googletag = googletag || {};
-         googletag.cmd = googletag.cmd || [];
-         window['googletag'] = googletag;
-         (function() {
-         var gads = document.createElement('script');
-         gads.async = true;
-         gads.type = 'text/javascript';
-         var useSSL = 'https:' == document.location.protocol;
-         gads.src = (useSSL ? 'https:' : 'http:') +
-         '//www.googletagservices.com/tag/js/gpt.js';
-         var node = document.getElementsByTagName('script')[0];
-         node.parentNode.insertBefore(gads, node);
-         })();
-      </script>
       <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
       <link href="css/master.css" rel="stylesheet">
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.magnific-popup.min.js"></script>
-      <script type="text/javascript" src="mc/lib/soundjs.min.js"></script>
-      <script type="text/javascript" src="mc/agario.js?v=23"></script>
-      <script>
-         var rpx_params = {
-         	kw: '',
-         	visitor: {},
-         	inventory: {}
-         };
-
-         var hasBottomAd = false;
-         var isInFacebook = window.location.search.indexOf('fb') != -1;
-         if(window.innerHeight > 960 && !isInFacebook){
-         	hasBottomAd = true;
-         }
-      </script>
+      <script src="http://connect.facebook.net/en_US/sdk.js"></script>
+      <script src="environment.js?v=23"></script>
+      <script src="i18n.js?v=23"></script>
    </head>
    <body>
       <main style="display:none">
          <h1>Agar.io HK</h1>
          <p>The smash hit game! Control your cell and eat other players to grow larger! Play with millions of players around the world and try to become the biggest cell of all!</p>
-         <script type="text/javascript">
-            $(function(){
-            	window['setGameMode']('');
-            })
-         </script>
       </main>
       <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>
       <div id="openfl-overlay"></div>
       <div id="openfl-content"></div>
       <a id="modal-payment-link" class="xsolla_container" href="/pay/"></a>
-      <script src="js/a.js?a&amp;ad_box_"></script>
       <div id="overlays" style="display:none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 200;">
          <div id="helloContainer" data-logged-in="0" data-has-account-data="0" data-party-state="0" data-results-state="0" data-gamemode="">
             <div class="side-container">
@@ -354,23 +292,6 @@
                </div>
             </div>
          </div>
-         <script>
-            if(hasBottomAd){
-            	document.write('<div id="adsBottom" style="z-index: 200;display:block;"><div id="adsBottomInner"><div id="g728x90"></div><div id="a728x90"></div></div></div>');
-            }
-
-         </script>
-         <footer class="tosBox left">
-            <center>
-               <a href="/ffa/" class="text-muted" data-itr="gamemode_ffa" title="Free-for-all action: eat other players to be the biggest cell on the block!"></a>
-               |
-               <a href="/teams/" class="text-muted" data-itr="gamemode_teams" title="Join up for team mode group action: co-operate, compete, eat!"></a>
-               |
-               <a href="/experimental/" class="text-muted" data-itr="gamemode_experimental" title="Experimental game mode with a strange new food-producing virus."></a>
-               |
-               <a href="/party/" class="text-muted" data-itr="party" title="Play with your friends! Create your own private room and invite friends!"></a>
-            </center>
-         </footer>
          <footer class="tosBox right">
             <center>
                <a href="/privacy.txt" class="text-muted" data-itr="privacy_policy"></a>
@@ -387,101 +308,7 @@
             <p data-itr="connect_help"></p>
          </div>
       </div>
-      <script>
-         $('.partyToken').on('mouseover click mousemove mousedown mouseup select', function(e){
-         	//this.setSelectionRange(0, this.value.length);
-         	//e.preventDefault();
-         });
-
-         $('.copy-party-token').click(function(){
-         	var i = $('.partyToken:visible')[0];
-         	i.setSelectionRange(0, i.value.length);
-         	i.select();
-         	try {
-         		document.execCommand('copy');
-         	} catch (e) {}
-         });
-
-         var hasAdblock = (document.getElementById("tester") == null);
-
-         if(hasAdblock){
-         	$('#adbg').css('background-image', "url('/blocker.png')");
-         }
-      </script>
       <canvas id="canvas" width="800" height="600"></canvas>
       <div style="font-family:'Ubuntu'">&nbsp;</div>
-      <script>
-         var MC = new MiniclipAPI("openfl-content","openfl-overlay");
-         MC.loadEnvironment(EnvConfig);
-         window["MC"]=MC;
-         lime.embed ("openfl-content", 880, 1024, "transparent", "mc/");
-         MC.hideContainer();
-
-         $(function () {
-         	$('[data-itr]').each(function(){
-         		var $this = $(this);
-         		var itr = $this.attr('data-itr');
-         		$this.html(i18n[itr] || i18n_dict['en'][itr] || itr);
-         		//$this.html('');
-         	});
-
-         	$('#massButton').click(function() {
-         		MC.openShop('shopMass');
-         	});
-         	$('#skinButton').click(function() {
-         		MC.openShop('shopSkins');
-         	});
-         	$('#boostButton').click(function() {
-         		MC.openShop('shopBoost');
-         	});
-         	$('.agario-wallet-container').click(function() {
-         		if(MC.isShopAvailable())
-         		{
-         			MC.openShop('shopCurrency');
-         		}
-         	});
-
-         	/* Disabled on v1.1
-         	$('.agario-profile-picture').click(function(){
-                 MC.showProfile();
-             })
-         	*/
-         	$('.btn-login').tooltip({
-         		'html': true,
-         		'title': i18n['login_tooltip'],
-         		'placement': 'bottom',
-         		'trigger': 'manual'
-         	});
-
-         	var tooltipCounter = 0;
-         	$('.btn-login').hover(function(){ tooltipCounter++; checkTooltip(); } , function(){ tooltipCounter--; checkTooltip(); });
-             $('.btn-play-guest').hover(function(){ tooltipCounter++; checkTooltip(); } , function(){ tooltipCounter--; checkTooltip(); });
-             $('.agario-loggedout-panel').hover(function(){ tooltipCounter++; checkTooltip(); } , function(){ tooltipCounter--; checkTooltip(); });
-
-             var checkTimer = 0;
-             function checkTooltip(){
-             	if (tooltipCounter > 0){
-             		clearTimeout(checkTimer);
-         			$('.btn-login').tooltip('show');
-             	} else {
-             		checkTimer = setTimeout(function(){
-             			$('.btn-login').tooltip('hide');
-             		}, 200);
-             	}
-             }
-         });
-
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-         ga('create', 'UA-62402209-1', 'auto');
-         ga('send', 'pageview');
-         ga('send', 'event', 'HasAdblock', hasAdblock ? 'Yes' : 'No', {'nonInteraction': 1});
-
-         //ga('send', 'event', 'Protocol', window.location.protocol, {'nonInteraction': 1});
-
-      </script>
    </body>
 </html>
