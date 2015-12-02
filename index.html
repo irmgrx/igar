@@ -56,8 +56,8 @@
                       <option value="[OO]">OO</option>
                     </select>
                      <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" autofocus />
-                     <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());" required>
-                        <option value="" data-itr="gamemode_ffa">FFA</option>
+                     <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());">
+                        <option selected value="" data-itr="gamemode_ffa">FFA</option>
                         <option value=":teams" data-itr="gamemode_teams">TEAM</option>
                         <option value=":experimental" data-itr="gamemode_experimental">EXPER</option>
                         <option value=":party" data-itr="party">PARTY</option>
@@ -65,7 +65,7 @@
                   </div>
                   <div id="locationUnknown">
                      <select id="region" class="myform-control" onchange="setRegion($('#region').val());" required>
-                        <option selected disabled value="" data-itr="region_select">-- REGION --</option>
+                        <option selected disabled value="" data-itr="region_select"></option>
                         <option value="US-Atlanta" data-itr="region_north_america">NORTH AMERICA</option>
                         <option value="BR-Brazil" data-itr="region_south_america">SOUTH AMERICA</option>
                         <option value="EU-London" data-itr="region_europe">EUROPE</option>
@@ -76,19 +76,18 @@
                         <option value="SG-Singapore" data-itr="region_oceania">OCEANIA</option>
                      </select>
                   </div>
-                  <div class="form-group" id="agario-main-buttons">
+                  <div>
                      <button disabled type="submit" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server" data-itr="play" style="margin:0 5px 0 0">PLAY</button>
                      <button disabled type="submit" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play-guest btn-success btn-needs-server" data-itr="play_as_guest" style="margin:0 5px 0 0">PLAY</button>
                      <button onclick="facebookLogin(); return false;" class="btn btn-login btn-primary" style="line-height: 24px;">
                      <span class="social social-facebook" style="font-size:24px;margin-top:-6px;margin-left:-8px;vertical-align:middle;margin-right:5px;"></span>
                      <span data-itr="login_and_play">LOGIN</span>
                      </button>
-                     <button type="button" onclick="$('#settings, #instructions').toggle();return false;" class="btn btn-info btn-settings"><i class="glyphicon glyphicon-cog"></i></button>
+                     <button type="button" onclick="$('#settings, #instructions').toggle();return false;" class="btn btn-info btn-settings" style="float:right;"><i class="glyphicon glyphicon-cog"></i></button>
                      <br clear="both"/>
                   </div>
                   <div id="settings" class="checkbox" style="display:none;">
                      <div style="float: left; width: 200px;">
-                        <div id="locationKnown"></div>
                         <div id="options" style="margin: 6px; font-size: 12px;">
                            <label><input type="checkbox" onchange="setSkins(!$(this).is(':checked'));"><span data-itr="option_no_skins">TOGGLE SKIN</span></label>
                            <label><input type="checkbox" onchange="setNames(!$(this).is(':checked'));"><span data-itr="option_no_names">TOGGLE NAME</span></label>
