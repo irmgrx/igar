@@ -95,68 +95,6 @@
                <hr/>
             </div>
             <div class="side-container">
-               <div class="agario-party">
-                  <div class="agario-panel agario-side-panel agario-party-0">
-                     <h4>
-                        <center data-itr="party"></center>
-                     </h4>
-                     <div style="margin-bottom: 12px;" data-itr="party_description"></div>
-                     <div class="clearfix" style="margin: 0px -10px 0px -10px;">
-                        <button class="btn btn-primary" style="width: 102.5px; float: left;" onclick="$('#helloContainer').attr('data-party-state', '3');createParty();" data-itr="create_party"></button>
-                        <button class="btn btn-primary" style="width: 102.5px; float: right;" onclick="$('#joinPartyToken').val('');$('#helloContainer').attr('data-party-state', '2');" data-itr="join_party"></button>
-                     </div>
-                  </div>
-                  <div class="agario-panel agario-side-panel agario-party-1">
-                     <h4>
-                        <center data-itr="party"></center>
-                     </h4>
-                     <div style="margin-bottom: 12px;" data-itr="create_party_instructions"></div>
-                     <div class="clearfix">
-                        <input type="text" value="??????" readonly class="partyToken form-control" style="cursor: text; width: 130px; float: left; border-radius: 4px 0px 0px 4px;"/>
-                        <button class="btn btn-primary copy-party-token" style="float: right; width: 60px; border-radius: 0px 4px 4px 0px;">Copy</button>
-                     </div>
-                  </div>
-                  <div class="agario-panel agario-side-panel agario-party-2">
-                     <h4>
-                        <center data-itr="party"></center>
-                     </h4>
-                     <div style="margin-bottom: 12px;" data-itr="join_party_instructions"></div>
-                     <input id="joinPartyToken" type="text" value="" class="form-control"/>
-                     <div class="clearfix" style="margin: 10px -10px 0px -10px;">
-                        <button class="btn btn-primary" style="width: 210px; float: right;" onclick="joinParty($('#joinPartyToken').val());" data-itr="join_party"></button>
-                     </div>
-                  </div>
-                  <div class="agario-panel agario-side-panel agario-party-3" style="padding: 0px; overflow: hidden; position: relative;">
-                     <canvas width="220" height="100" class="cell-spinner" data-size="26"></canvas>
-                     <div class="creating-party-text" data-itr="creating_party"></div>
-                  </div>
-                  <div class="agario-panel agario-side-panel agario-party-4" style="padding: 0px; overflow: hidden; position: relative;">
-                     <canvas width="220" height="100" class="cell-spinner" data-size="26"></canvas>
-                     <div class="creating-party-text" data-itr="joining_party"></div>
-                  </div>
-                  <div class="agario-panel agario-side-panel agario-party-5">
-                     <h4>
-                        <center data-itr="party"></center>
-                     </h4>
-                     <div style="margin-bottom: 12px;" data-itr="joined_party_instructions"></div>
-                     <div class="clearfix">
-                        <input type="text" value="??????" readonly class="partyToken form-control" style="cursor: text; width: 125px; float: left;"/>
-                        <button class="btn btn-primary copy-party-token" style="float: right; width: 60px;">Copy</button>
-                     </div>
-                  </div>
-                  <div class="agario-panel agario-side-panel agario-party-6">
-                     <h4>
-                        <center data-itr="party"></center>
-                     </h4>
-                     <div style="margin-bottom: 12px;" data-itr="party_join_error"></div>
-                     <div class="clearfix" style="margin: 10px -10px 0px -10px;">
-                        <button class="btn btn-primary btn-block" onclick="$('#helloContainer').attr('data-party-state', '0');" data-itr="back_button"></button>
-                     </div>
-                  </div>
-                  <div style="position: absolute; right: 10px; top: 4px;">
-                     <button type="button" class="close" onclick="cancelParty();">&times;</button>
-                  </div>
-               </div>
             </div>
          </div>
          <footer class="tosBox right">
