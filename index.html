@@ -29,63 +29,66 @@
                   </div>
                </div>
             </div>
-
-              <div id="mainPanel" class="agario-panel">
-                <ul class="nav nav-tabs">
+            <div id="mainPanel" class="agario-panel">
+               <ul class="nav nav-tabs">
                   <li class="active"><a data-toggle="tab" href="#HOME">HOME</a></li>
                   <li class=""><a data-toggle="tab" href="#SKIN">SKIN</a></li>
-                </ul>
-                <div class="tab-content">
-               <form role="form" id="HOME" class="tab-pane fade in active">
-                  <div class="form-group clearfix">
-                     <!-- cell image -->
-                  </div>
-                  <div class="form-group clearfix">
-                    <select id="teamTag" class="myform-control" onchange="">
-                      <option selected value="">TAG</option>
-                      <option value="[XX]">XX</option>
-                      <option value="[OO]">OO</option>
-                    </select>
-                     <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" autofocus />
-                     <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());">
-                        <option selected value="" data-itr="gamemode_ffa">FFA</option>
-                        <option value=":teams" data-itr="gamemode_teams">TEAM</option>
-                        <option value=":experimental" data-itr="gamemode_experimental">EXPER</option>
-                        <option value=":party" data-itr="party">PARTY</option>
-                     </select>
-                  </div>
-                  <div class="form-group clearfix" id="gameSelector">
-                    <input maxlength="20" id="IPPARTY" class="myform-control" placeholder="IP / PARTY CODE">
-                    <button class="btn" id="BTNCONNECT" class="btn btn-success btn-needs-server" onclick="connectGame($('#IPPARTY').val().trim());" type="button" >CONNECT</button>
-                  </div>
-                  <div id="locationUnknown">
-                     <select id="region" class="myform-control" onchange="setRegion($('#region').val());" required>
-                        <option selected disabled value="" data-itr="region_select">-- SELECT A REGION --</option>
-                        <option value="US-Atlanta" data-itr="region_north_america">NORTH AMERICA</option>
-                        <option value="BR-Brazil" data-itr="region_south_america">SOUTH AMERICA</option>
-                        <option value="EU-London" data-itr="region_europe">EUROPE</option>
-                        <option value="RU-Russia" data-itr="region_russia">RUSSIA</option>
-                        <option value="TK-Turkey" data-itr="region_turkey">TURKEY</option>
-                        <option value="JP-Tokyo" data-itr="region_east_asia">EAST ASIA</option>
-                        <option value="CN-China" data-itr="region_china">CHINA</option>
-                        <option value="SG-Singapore" data-itr="region_oceania">OCEANIA</option>
-                     </select>
-                     <button onclick="spectate(); return false;" disabled class="MYBTN btn btn-warning btn-spectate btn-needs-server" data-itr="spectate" style="margin-left:5px;">SPECTATE</button>
-                  </div>
-                  <div>
-                     <button disabled type="submit" class="btn btn-play btn-primary btn-needs-server" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server" data-itr="play" style="margin:0 5px 0 0; width:48%;">PLAY</button>
-                     <button disabled type="submit" class="btn btn-play-guest btn-success btn-needs-server" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play-guest btn-success btn-needs-server" data-itr="play_as_guest" style="margin:0 5px 0 0; width:48%">PLAY</button>
-                     <button onclick="facebookLogin(); return false;" class="MYBTN btn btn-login btn-primary" style="line-height: 24px; width: 50%;">
-                     <span class="social social-facebook" style="font-size:24px;margin-top:-6px;margin-left:-8px;vertical-align:middle;margin-right:5px;"></span>
-                     <span data-itr="login_and_play">LOGIN</span>
-                     </button>
-                     <button onclick="logout(); return false;" class="MYBTN btn btn-danger btn-logout" data-itr="logout" style="width:50%; margin:0px">LOGOUT</button>
-                     <br clear="both"/>
-                  </div>
-               </form>
+               </ul>
+               <div class="tab-content">
+                  <form role="form" id="HOME" class="tab-pane fade in active">
+                     <div class="form-group clearfix">
+                        <!-- cell image -->
+                     </div>
+                     <div class="form-group clearfix">
+                        <select id="teamTag" class="myform-control" onchange="">
+                           <option selected value="">TAG</option>
+                           <option value="[XX]">XX</option>
+                           <option value="[OO]">OO</option>
+                        </select>
+                        <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" autofocus />
+                        <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());">
+                           <option selected value="" data-itr="gamemode_ffa">FFA</option>
+                           <option value=":teams" data-itr="gamemode_teams">TEAM</option>
+                           <option value=":experimental" data-itr="gamemode_experimental">EXPER</option>
+                           <option value=":party" data-itr="party">PARTY</option>
+                        </select>
+                     </div>
+                     <div class="form-group clearfix" id="gameSelector">
+                        <input maxlength="20" id="IPPARTY" class="myform-control" placeholder="IP / PARTY CODE">
+                        <button class="btn" id="BTNCONNECT" class="btn btn-success btn-needs-server" onclick="connectGame($('#IPPARTY').val().trim());" type="button" >CONNECT</button>
+                     </div>
+                     <div id="locationUnknown">
+                        <select id="region" class="myform-control" onchange="setRegion($('#region').val());" required>
+                           <option selected disabled value="" data-itr="region_select">-- SELECT A REGION --</option>
+                           <option value="US-Atlanta" data-itr="region_north_america">NORTH AMERICA</option>
+                           <option value="BR-Brazil" data-itr="region_south_america">SOUTH AMERICA</option>
+                           <option value="EU-London" data-itr="region_europe">EUROPE</option>
+                           <option value="RU-Russia" data-itr="region_russia">RUSSIA</option>
+                           <option value="TK-Turkey" data-itr="region_turkey">TURKEY</option>
+                           <option value="JP-Tokyo" data-itr="region_east_asia">EAST ASIA</option>
+                           <option value="CN-China" data-itr="region_china">CHINA</option>
+                           <option value="SG-Singapore" data-itr="region_oceania">OCEANIA</option>
+                        </select>
+                        <button onclick="spectate(); return false;" disabled class="MYBTN btn btn-warning btn-spectate btn-needs-server" data-itr="spectate" style="margin-left:5px;">SPECTATE</button>
+                     </div>
+                     <div>
+                        <button disabled type="submit" class="btn btn-play btn-primary btn-needs-server" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server" data-itr="play" style="margin:0 5px 0 0; width:48%;">PLAY</button>
+                        <button disabled type="submit" class="btn btn-play-guest btn-success btn-needs-server" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play-guest btn-success btn-needs-server" data-itr="play_as_guest" style="margin:0 5px 0 0; width:48%">PLAY</button>
+                        <button onclick="facebookLogin(); return false;" class="MYBTN btn btn-login btn-primary" style="line-height: 24px; width: 50%;">
+                        <span class="social social-facebook" style="font-size:24px;margin-top:-6px;margin-left:-8px;vertical-align:middle;margin-right:5px;"></span>
+                        <span data-itr="login_and_play">LOGIN</span>
+                        </button>
+                        <button onclick="logout(); return false;" class="MYBTN btn btn-danger btn-logout" data-itr="logout" style="width:50%; margin:0px">LOGOUT</button>
+                        <br clear="both"/>
+                     </div>
+                  </form>
+                  <form role="form" id="SKIN" class="tab-pane fade">
+                    <div class="form-group clearfix">
+                      <input id="SKINURL" class="myform-control" placeholder="SKIN URL" onchange="setMySkin(this.val());"/>
+                    </div>
+                  </form>
                </div>
                <hr/>
-
             </div>
             <div class="side-container">
             </div>
@@ -108,7 +111,9 @@
       </div>
       <canvas id="canvas" width="800" height="600"></canvas>
       <canvas id="minimap" width="250" height="250"></canvas>
-      <div id="LBCOPY"><div id="LBCOPYC"></div></div>
+      <div id="LBCOPY">
+         <div id="LBCOPYC"></div>
+      </div>
       <div id="GAMEDATA" unselectable="on" class="unselectable"><span id="STE"></span><span id="FPS"></span><span id="MODE"></span></div>
    </body>
 </html>
