@@ -49,7 +49,7 @@
                   </div>
                   <div class="form-group clearfix" id="gameSelector">
                     <input maxlength="20" id="IPPARTY" class="myform-control" placeholder="IP / PARTY CODE">
-                    <button class="btn" id="BTNCONNECT" class="MYBTN" onclick="connectGame($('#IPPARTY').val().trim());" type="button" >CONNECT</button>
+                    <button class="btn" id="BTNCONNECT" class="btn btn-success btn-needs-server" onclick="connectGame($('#IPPARTY').val().trim());" type="button" >CONNECT</button>
                   </div>
                   <div id="locationUnknown">
                      <select id="region" class="myform-control" onchange="setRegion($('#region').val());" required>
@@ -63,11 +63,11 @@
                         <option value="CN-China" data-itr="region_china">CHINA</option>
                         <option value="SG-Singapore" data-itr="region_oceania">OCEANIA</option>
                      </select>
-                     <button onclick="spectate(); return false;" disabled class="MYBTN btn btn-warning btn-spectate btn-needs-server" data-itr="spectate">SPECTATE</button>
+                     <button onclick="spectate(); return false;" disabled class="MYBTN btn btn-warning btn-spectate btn-needs-server" data-itr="spectate" style="margin-left:5px;">SPECTATE</button>
                   </div>
                   <div>
-                     <button disabled type="submit" class="MYBTN" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server" data-itr="play" style="margin:0 5px 0 0; width:48%;">PLAY</button>
-                     <button disabled type="submit" class="MYBTN" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play-guest btn-success btn-needs-server" data-itr="play_as_guest" style="margin:0 5px 0 0; width:48%">PLAY</button>
+                     <button disabled type="submit" class="btn btn-play btn-primary btn-needs-server" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server" data-itr="play" style="margin:0 5px 0 0; width:48%;">PLAY</button>
+                     <button disabled type="submit" class="btn btn-play-guest btn-success btn-needs-server" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play-guest btn-success btn-needs-server" data-itr="play_as_guest" style="margin:0 5px 0 0; width:48%">PLAY</button>
                      <button onclick="facebookLogin(); return false;" class="MYBTN btn btn-login btn-primary" style="line-height: 24px; width: 50%;">
                      <span class="social social-facebook" style="font-size:24px;margin-top:-6px;margin-left:-8px;vertical-align:middle;margin-right:5px;"></span>
                      <span data-itr="login_and_play">LOGIN</span>
