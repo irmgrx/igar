@@ -47,9 +47,13 @@
                         <option value=":party" data-itr="party">PARTY</option>
                      </select>
                   </div>
+                  <div class="form-group clearfix" id="gameSelector">
+                    <input maxlength="20" id="IPPARTY" class="myform-control" placeholder="IP / PARTY CODE">
+                    <button class="btn" id="BTNCONNECT" onclick="connectIP($('#IPPARTY').val().trim());" type="button">CONNECT</button>
+                  </div>
                   <div id="locationUnknown">
                      <select id="region" class="myform-control" onchange="setRegion($('#region').val());" required>
-                        <option selected disabled value="" data-itr="region_select"></option>
+                        <option selected disabled value="-- SELECT A REGION --" data-itr="region_select"></option>
                         <option value="US-Atlanta" data-itr="region_north_america">NORTH AMERICA</option>
                         <option value="BR-Brazil" data-itr="region_south_america">SOUTH AMERICA</option>
                         <option value="EU-London" data-itr="region_europe">EUROPE</option>
