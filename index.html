@@ -86,13 +86,13 @@
                   </form>
                   <form role="form" id="SKIN" class="tab-pane fade">
                     <div class="clearfix">
-                      <input id="SKINURL" class="myform-control" placeholder="SKIN URL" onchange="setMySkin(this.value);"/>
+                      <input id="SKINURL" class="myform-control" placeholder="SKIN URL" autocomplete="on" onchange="setMySkin(this.value);"/>
                       <div class='spinner-container'>
                         <div class='spinner'></div>
                       </div>
                       <div class="clearfix">
                         <a id="BTNUPLOADSKIN" target="_blank" href="http://upload.happyfor.me/" class="btn btn-info myform-control" role="button">UPLOAD SKIN</a>
-                        <input id="YINAC" class="myform-control" placeholder="YIN EMAIL" maxlength="120"/>
+                        <input id="YINAC" class="myform-control" placeholder="YIN EMAIL" maxlength="120" autocomplete="on"/>
                         <input id="YINPW" class="myform-control" placeholder="PASSWORD" maxlength="120" type="password" onchange="getYinSkin();"/>
                       </div>
                       <div>
