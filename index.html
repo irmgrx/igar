@@ -93,17 +93,17 @@
                       <div class="clearfix">
                         <a id="BTNUPLOADSKIN" target="_blank" href="http://upload.happyfor.me/" class="btn btn-info myform-control" role="button">UPLOAD SKIN</a>
                         <input id="YINAC" class="myform-control" placeholder="YIN EMAIL" maxlength="120"/>
-                        <input id="YINPW" class="myform-control" placeholder="PASSWORD" maxlength="120"/>
+                        <input id="YINPW" class="myform-control" placeholder="PASSWORD" maxlength="120" type="password" onchange="getYinSkin();"/>
                       </div>
                       <div>
                         <div class="checkbox checkbox-info">
-                          <input type="checkbox" id="checkbox1" class="styled">
+                          <input type="checkbox" id="checkbox1" class="styled" onchange="toggleNormalSkin(this.value);">
                           <label for="checkbox1">
                               NORMAL SKIN
                           </label>
                         </div>
                         <div class="checkbox checkbox-info">
-                          <input type="checkbox" id="checkbox2" class="styled">
+                          <input type="checkbox" id="checkbox2" class="styled" onchange="toggleYinSkin(this.value);">
                           <label for="checkbox2">
                               YIN SKIN
                           </label>
