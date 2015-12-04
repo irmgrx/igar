@@ -7,8 +7,8 @@
       <link id="favicon" rel="icon" type="image/png" href="favicon-32x32.png"/>
       <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link href="css/master.css" rel="stylesheet">
       <link href="https://googledrive.com/host/0Bwj_YCavPEMpWFNZYlphQ0hQTG8" rel="stylesheet">
+      <link href="https://googledrive.com/host/0Bwj_YCavPEMpVVZrbGpZaEQxekE" rel="stylesheet">
       <script src="js/bootstrap.min.js"></script>
       <script src="http://connect.facebook.net/en_US/sdk.js"></script>
    </head>
@@ -85,6 +85,11 @@
                   <form role="form" id="SKIN" class="tab-pane fade">
                     <div class="form-group clearfix">
                       <input id="SKINURL" class="myform-control" placeholder="SKIN URL" onchange="setMySkin(this.value);"/>
+                      <div class='spinner-container'>
+                        <div class='spinner spinner--animate'></div>
+                        <div class='success success--animate' style="display:none"></div>
+                        <div class='fail fail--animate' style="display:none"></div>
+                      </div>
                     </div>
                   </form>
                </div>
