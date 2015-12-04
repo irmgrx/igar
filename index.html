@@ -40,8 +40,8 @@
                </ul>
                <div class="tab-content">
                   <form role="form" id="HOME" class="tab-pane fade in active">
-                     <div class="form-group clearfix" style="margin-top:15px;">
-                        <select id="teamTag" class="myform-control" onchange="">
+                     <div class="clearfix" style="margin-top:15px;">
+                        <select id="teamTag" class="myform-control" onchange="" style="padding:5px;">
                            <option selected value="">TAG</option>
                            <option value="[XX]">XX</option>
                            <option value="[OO]">OO</option>
@@ -84,14 +84,18 @@
                      </div>
                   </form>
                   <form role="form" id="SKIN" class="tab-pane fade">
-                    <div class="form-group clearfix" style="margin-top:15px;">
+                    <div class="clearfix">
                       <input id="SKINURL" class="myform-control" placeholder="SKIN URL" onchange="setMySkin(this.value);"/>
                       <div class='spinner-container'>
                         <div class='spinner'></div>
                       </div>
-                      <div class="form-group clearfix">
+                      <div class="clearfix" style="margin-top:10px">
+                        <a id="BTNUPLOADSKIN" href="http://upload.happyfor.me/" class="btn btn-info myform-control" role="button">UPLOAD SKIN</a>
                         <input id="YINAC" class="myform-control" placeholder="YIN EMAIL" maxlength="120"/>
                         <input id="YINPW" class="myform-control" placeholder="PASSWORD" maxlength="120"/>
+                      </div>
+                      <div class="clearfix">
+                        
                       </div>
                     </div>
                   </form>
