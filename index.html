@@ -49,7 +49,7 @@
                            <option value="XX ">XX</option>
                            <option value="OO ">OO</option>
                         </select>
-                        <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" autofocus />
+                        <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" onchange="checkNameEmpty(this.value);" autofocus />
                         <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());">
                            <option selected value="" data-itr="gamemode_ffa">FFA</option>
                            <option value=":teams" data-itr="gamemode_teams">TEAM</option>
