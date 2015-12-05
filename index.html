@@ -38,14 +38,15 @@
                <ul class="nav nav-tabs">
                   <li class="active"><a data-toggle="tab" href="#HOME">HOME</a></li>
                   <li class=""><a data-toggle="tab" href="#SKIN">SKIN</a></li>
+                  <li class=""><a data-toggle="tab" href="#INFO">INFO</a></li>
                </ul>
                <div class="tab-content">
                   <form role="form" id="HOME" class="tab-pane fade in active">
                      <div class="clearfix" style="margin-top:15px;">
                         <select id="teamTag" class="myform-control" onchange="" style="padding:5px;">
                            <option selected value="">TAG</option>
-                           <option value="[XX]">XX</option>
-                           <option value="[OO]">OO</option>
+                           <option value="XX ">XX</option>
+                           <option value="OO ">OO</option>
                         </select>
                         <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" autofocus />
                         <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());">
@@ -90,7 +91,7 @@
                       <div class='spinner-container'>
                         <div class='spinner'></div>
                       </div>
-                      <div class="clearfix">
+                      <div class="clearfix" style="margin-top:4px">
                         <a id="BTNUPLOADSKIN" target="_blank" href="http://upload.happyfor.me/" class="btn btn-info myform-control" role="button">UPLOAD SKIN</a>
                         <input id="YINAC" class="myform-control" placeholder="YIN EMAIL" maxlength="120" autocomplete="on"/>
                         <input id="YINPW" class="myform-control" placeholder="PASSWORD" maxlength="120" type="password" onchange="getYinSkin();"/>
@@ -111,21 +112,14 @@
                       </div>
                     </div>
                   </form>
+                  <form role="form" id="INFO" class="tab-pane fade">
+                  </form>
                </div>
                <hr/>
             </div>
             <div class="side-container">
             </div>
          </div>
-         <footer class="tosBox right">
-            <center>
-               <a href="/privacy.txt" class="text-muted" data-itr="privacy_policy">PRIVACY</a>
-               |
-               <a href="/terms.txt" class="text-muted" data-itr="terms_of_service">TERMS</a>
-               |
-               <a href="/changelog.txt" class="text-muted" data-itr="changelog">CHANGELOG</a>
-            </center>
-         </footer>
       </div>
       <div id="connecting" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 100;">
          <div class="connecting-panel" style="width: 350px; background-color: #FFFFFF; margin: auto auto auto -175px; border-radius: 15px; padding: 5px 15px 5px 15px;">
