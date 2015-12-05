@@ -41,6 +41,7 @@
                <ul class="nav nav-tabs">
                   <li class="active"><a data-toggle="tab" href="#HOME">HOME</a></li>
                   <li class=""><a data-toggle="tab" href="#SKIN">SKIN</a></li>
+                  <li class=""><a data-toggle="tab" href="#TEAM">TEAM</a></li>
                   <li class=""><a data-toggle="tab" href="#INFO">INFO</a></li>
                </ul>
                <div class="tab-content">
@@ -115,7 +116,19 @@
                       </div>
                     </div>
                   </form>
-                  <form role="form" id="INFO" class="tab-pane fade">
+                  <form role="form" id="TEAM" class="tab-pane fade active in">
+                    <div class="clearfix" style="margin-top:15px;">
+                      <input id="SERVERURI" class="myform-control" placeholder="SERVER ADDRESS" autocomplete="on">
+                    </div>
+                    <div class="clearfix">
+                      <input maxlength="10" id="TEAMNAME" class="myform-control" placeholder="TEAM NAME">
+                      <button class="MYBTN btn btn-primary" onclick="connectToServer();">CONNECT</button>
+                    </div>
+                  </form>
+                  <form role="form" id="INFO" class="tab-pane fade active in">
+                    <div class="clearfix">
+                      <div id="ELAPSEDTIME" class="myform-control">ELAPSED TIME : 1 hrs 48 mins 56 secs</div>
+                    </div>
                   </form>
                </div>
                <hr/>
