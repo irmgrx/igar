@@ -118,13 +118,16 @@
                     </div>
                   </form>
                   <form role="form" id="TEAM" class="tab-pane fade in">
-                    <div class="clearfix" style="margin-top:15px;">
-                      <input id="SERVERURI" class="myform-control" placeholder="SERVER ADDRESS" autocomplete="on">
+                    <div  class="clearfix" style="margin-top: 15px;">
+                      <input maxlength="10" id="TEAMNAME" class="myform-control" placeholder="TEAM NAME">
                     </div>
                     <div class="clearfix">
-                      <input maxlength="10" id="TEAMNAME" class="myform-control" placeholder="TEAM NAME">
-                      <button class="MYBTN btn btn-success" onclick="connectToServer(); return false;">CONNECT</button>
-                    </div>
+                      <input id="SERVERURI" class="myform-control" placeholder="SERVER ADDRESS" autocomplete="on">
+                      <div class="spinner-container">
+                          <div class="spinner"></div>
+                      </div>
+                      <button class="MYBTN btn btn-success" onclick="connectToServer(); return false;" style="width: 100%; margin-top: 8px;">CONNECT</button>
+                   </div>
                   </form>
                   <form role="form" id="INFO" class="tab-pane fade in">
                     <ul class="list-group" style="margin-top:15px;margin-bottom: 10px;">
