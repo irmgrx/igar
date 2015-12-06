@@ -85,7 +85,7 @@
                         <span class="social social-facebook" style="font-size:24px;margin-top:-6px;margin-left:-8px;vertical-align:middle;margin-right:5px;"></span>
                         <span data-itr="login_and_play">LOGIN</span>
                         </button>
-                        <button onclick="logout(); return false;" class="MYBTN btn btn-danger btn-logout" data-itr="logout" style="width:50%; margin:0px">LOGOUT</button>
+                        <button onclick="logout(); return false;" class="MYBTN btn btn-danger btn-logout" data-itr="logout" style="width:50%; margin-top: 1px; margin-left: 0px;">LOGOUT</button>
                         <br clear="both"/>
                      </div>
                   </form>
@@ -122,13 +122,26 @@
                     </div>
                     <div class="clearfix">
                       <input maxlength="10" id="TEAMNAME" class="myform-control" placeholder="TEAM NAME">
-                      <button class="MYBTN btn btn-primary" onclick="connectToServer();">CONNECT</button>
+                      <button class="MYBTN btn btn-success" onclick="connectToServer();">CONNECT</button>
                     </div>
                   </form>
                   <form role="form" id="INFO" class="tab-pane fade in">
                     <div class="clearfix">
+                      <div id="IP-INFO" class="myform-control">IP : <span style="float:right"></span></div>
+                    </div>
+                    <div class="clearfix">
+                      <div id="REGION-INFO" class="myform-control">REGION : <span style="float:right"></span></div>
+                    </div>
+                    <div class="clearfix">
+                      <div id="MODE-INFO" class="myform-control">GAME MODE : <span style="float:right"></span></div>
+                    </div>
+                    <div class="clearfix">
+                      <div id="MODE-INFO" class="myform-control">PARTY CODE : <span style="float:right"></span></div>
+                    </div>
+                    <div class="clearfix">
                       <div id="ELAPSEDTIME" class="myform-control">ELAPSED TIME : <span style="float:right">1 hrs 48 mins 56 secs</span></div>
                     </div>
+                    <button id="BTNCOPYLB" class="btn btn-info myform-control" role="button">COPY LEADERBOARD</buton>
                   </form>
                </div>
                <hr/>
