@@ -16,7 +16,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="http://connect.facebook.net/en_US/sdk.js"></script>
-      <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.Core.min.js"></script>
    </head>
    <body>
       <div id="fb-root"></div>
@@ -133,7 +133,7 @@
                       <li id="MODE-INFO" class="list-group-item list-group-item-info">GAME MODE : <span style="float:right"></span></li>
                       <li id="PARTY-INFO" class="list-group-item list-group-item-info">PARTY CODE : <span style="float:right"></span></li>
                     </ul>
-                    <button id="BTNCOPYLB" class="btn btn-info myform-control" data-clipboard-target="#LBCOPYC" onclick="copyLB(); return false;">COPY LEADERBOARD</button>
+                    <button id="BTNCOPYLB" class="btn btn-info myform-control" data-clipboard-text="" onclick="copyLB(); return false;">COPY LEADERBOARD</button>
                   </form>
                </div>
             </div>
