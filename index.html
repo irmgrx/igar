@@ -134,13 +134,14 @@
                      <a id="IPLIST" target="_blank" href="" class="btn btn-info myform-control" role="button" style="display:none">IP LIST</a>
                    </div>
                   </form>
-                  <form role="form" id="INFO" class="tab-pane fade in">
+                  <form role="form" id="INFO" class="tab-pane fade in" onsubmit="return false;">
                     <ul class="list-group" style="margin-top:15px;margin-bottom: 10px;">
                       <li id="IP-INFO" class="list-group-item list-group-item-info">IP ADDRESS : <span style="float:right"></span></li>
                       <li id="REGION-INFO" class="list-group-item list-group-item-info">REGION : <span style="float:right"></span></li>
                       <li id="MODE-INFO" class="list-group-item list-group-item-info">GAME MODE : <span style="float:right"></span></li>
                       <li id="PARTY-INFO" class="list-group-item list-group-item-info">PARTY CODE : <span style="float:right"></span></li>
                     </ul>
+                    <button id="CUSTOMSHORTCUT" class="MYBTN btn btn-warning" onclick="toggleShortCutPanel();">CUSTOM SHORTCUT</button>
                   </form>
                </div>
             </div>
@@ -158,9 +159,12 @@
             </div>
          </div>
       </div>
+      <div id="shortcutPanel" style="display:none;">
+        
+      </div>
       <div id="connecting" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 100;">
          <div class="connecting-panel" style="width: 350px; background-color: #FFFFFF; margin: auto auto auto -175px; border-radius: 15px; padding: 5px 15px 5px 15px;">
-            <h2 data-itr="connecting"></h2>
+            <h2 data-itr="connecting">CONNECTING</h2>
             <p data-itr="connect_help"></p>
          </div>
       </div>
