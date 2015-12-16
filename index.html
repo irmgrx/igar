@@ -160,11 +160,26 @@
          </div>
       </div>
       <div id="shortcutPanel" style="display:none;">
-        <div>
-          
+        <div style="height: 265px; margin: 10px 0px;">
+          <table style="color: white; width: 100%; text-align: center;">
+            <thead>
+              <tr>
+                <th style="text-align: center;">KEY</th>
+                <th style="text-align: center;">FUNCTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><input class="shortcutkey text" value="D"></input></td><td>MARCO W</td></tr>
+              <tr><td><input class="shortcutkey text" value="F"></input></td><td>MARCO SPACE</td></tr>
+              <tr><td><input class="shortcutkey text" value="C"></input></td><td>CHAT ROOM</td></tr>
+              <tr><td><input class="shortcutkey text" value="S"></input></td><td>TOGGLE MOVE</td></tr>
+              <tr><td><input class="shortcutkey text" value="O"></input></td><td>TOGGLE FOOD</td></tr>
+              <tr><td><input class="shortcutkey text" value="N"></input></td><td>TOGGLE NAME</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div>
-          <button class="MYBTN btn btn-cancle" onclick="cancleShortCutPanel();">CANCLE</button>
+        <div style="float:right">
+          <button class="MYBTN btn btn-warning" onclick="cancleShortCutPanel();">CANCLE</button>
           <button class="MYBTN btn btn-success" onclick="applyShortCut();">APPLY</button>
         </div>
       </div>
