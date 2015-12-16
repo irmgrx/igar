@@ -169,18 +169,18 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td><input class="shortcutkey text" value="D"></input></td><td>MARCO W</td></tr>
-              <tr><td><input class="shortcutkey text" value="F"></input></td><td>MARCO SPACE</td></tr>
-              <tr><td><input class="shortcutkey text" value="C"></input></td><td>CHAT ROOM</td></tr>
-              <tr><td><input class="shortcutkey text" value="S"></input></td><td>TOGGLE MOVE</td></tr>
-              <tr><td><input class="shortcutkey text" value="O"></input></td><td>TOGGLE FOOD</td></tr>
-              <tr><td><input class="shortcutkey text" value="N"></input></td><td>TOGGLE NAME</td></tr>
+              <tr><td><input class="shortcutkey text" value="D" data-index="0"></input></td><td>MARCO W</td></tr>
+              <tr><td><input class="shortcutkey text" value="F" data-index="1"></input></td><td>MARCO SPACE</td></tr>
+              <tr><td><input class="shortcutkey text" value="C" data-index="2"></input></td><td>CHAT ROOM</td></tr>
+              <tr><td><input class="shortcutkey text" value="S" data-index="3"></input></td><td>TOGGLE MOVE</td></tr>
+              <tr><td><input class="shortcutkey text" value="O" data-index="4"></input></td><td>TOGGLE FOOD</td></tr>
+              <tr><td><input class="shortcutkey text" value="N" data-index="5"></input></td><td>TOGGLE NAME</td></tr>
             </tbody>
           </table>
         </div>
         <div style="float:right">
-          <button class="MYBTN btn btn-warning" onclick="cancleShortCutPanel();">CANCLE</button>
-          <button class="MYBTN btn btn-success" onclick="applyShortCut();">APPLY</button>
+          <button class="MYBTN btn btn-success" style="width:50%" onclick="applyShortCut();">APPLY</button>
+          <button class="MYBTN btn btn-warning" style="width:48%" onclick="cancleShortCutPanel();">CANCLE</button>
         </div>
       </div>
       <div id="connecting" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 100;">
