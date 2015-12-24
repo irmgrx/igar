@@ -145,30 +145,47 @@
             <div class="side-container">
               <img src="http://i68.tinypic.com/2zyelqu.png" border="0" style="width: 70px;height: 70px;position: relative;top: -54px;right: 90px;z-index: 2;">
               <div id="keyInfo" class="agario-panel agario-side-panel">
-                <ul>
-                  <li><span class="key">D</span> : <span>MARCO FEED</span></li>
-                  <li><span class="key">F</span> : <span>MARCO SPACE</span></li>
-                  <li><span class="key">C</span> : <span>CHAT ROOM</span></li>
-                  <li><span class="key">S</span> : <span>TOGGLE MOVE</span></li>
-                  <li><span class="key">O</span> : <span>TOGGLE FOOD</span></li>
-                  <li><span class="key">N</span> : <span>TOGGLE NAME</span></li>
-                </ul>
-                <hr style="margin-top: 0px; margin-bottom: 5px;">
-                <div class="checkbox checkbox-info MODECHECK">
-                  <input id="model1" class="styled" type="checkbox" onchange="setAcid(this.checked);">
-                  <label for="model1">ACID MODE</label>
+                <div>
+                  <ul>
+                    <li><span class="key">D</span> : <span>MARCO FEED</span></li>
+                    <li><span class="key">F</span> : <span>MARCO SPACE</span></li>
+                    <li><span class="key">C</span> : <span>CHAT ROOM</span></li>
+                    <li><span class="key">S</span> : <span>TOGGLE MOVE</span></li>
+                    <li><span class="key">O</span> : <span>TOGGLE FOOD</span></li>
+                    <li><span class="key">N</span> : <span>TOGGLE NAME</span></li>
+                  </ul>
+                  <hr style="margin-top: 0px; margin-bottom: 3px;">
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model1" class="styled" type="checkbox" onchange="setAcid(this.checked);">
+                    <label for="model1">ACID MODE</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model2" class="styled" onchange="toggleAutoHideFood(this.checked);" type="checkbox">
+                    <label for="model2">AUTO HIDE FOOD</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model4" class="styled" onchange="toggleColorFood(this.checked);" type="checkbox">
+                    <label for="model4">RAINBOW FOOD</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model3" class="styled" onchange="snowingEffect(this.checked);" type="checkbox" checked>
+                    <label for="model3">SNOWING</label>
+                  </div>
                 </div>
-                <div class="checkbox checkbox-info MODECHECK">
-                  <input id="model2" class="styled" onchange="toggleAutoHideFood(this.checked);" type="checkbox">
-                  <label for="model2">AUTO HIDE FOOD</label>
+                <div class="behind">
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model5" class="styled" onchange="toggleTransparent(this.checked);" type="checkbox" checked>
+                    <label for="model5">TRANSPARENT</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model6" class="styled" onchange="toggleDefaultGrid(this.checked);" type="checkbox">
+                    <label for="model6">DEFAULT GRID</label>
+                  </div>
                 </div>
-                <div class="checkbox checkbox-info MODECHECK">
-                  <input id="model4" class="styled" onchange="toggleColorFood(this.checked);" type="checkbox">
-                  <label for="model4">RAINBOW FOOD</label>
-                </div>
-                <div class="checkbox checkbox-info MODECHECK">
-                  <input id="model3" class="styled" onchange="snowingEffect(this.checked);" type="checkbox" checked>
-                  <label for="model3">SNOWING</label>
+                <div class="keynav">
+                	<div class="active"></div>
+                  <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
