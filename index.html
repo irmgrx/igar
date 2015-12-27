@@ -153,12 +153,9 @@
                     <li><span class="key">S</span> : <span>TOGGLE MOVE</span></li>
                     <li><span class="key">O</span> : <span>TOGGLE FOOD</span></li>
                     <li><span class="key">N</span> : <span>TOGGLE NAME</span></li>
+                    <li><span class="key">L</span> : <span>LEADERBOARD</span></li>
                   </ul>
                   <hr style="margin-top: 0px; margin-bottom: 3px;">
-                  <div class="checkbox checkbox-info MODECHECK">
-                    <input id="model1" class="styled" type="checkbox" onchange="setAcid(this.checked);">
-                    <label for="model1">ACID MODE</label>
-                  </div>
                   <div class="checkbox checkbox-info MODECHECK">
                     <input id="model2" class="styled" onchange="toggleAutoHideFood(this.checked);" type="checkbox">
                     <label for="model2">AUTO HIDE FOOD</label>
@@ -174,12 +171,20 @@
                 </div>
                 <div class="behind">
                   <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model1" class="styled" type="checkbox" onchange="setAcid(this.checked);">
+                    <label for="model1">ACID MODE</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
                     <input id="model5" class="styled" onchange="toggleTransparent(this.checked);" type="checkbox" checked>
                     <label for="model5">TRANSPARENT</label>
                   </div>
                   <div class="checkbox checkbox-info MODECHECK">
                     <input id="model6" class="styled" onchange="toggleDefaultGrid(this.checked);" type="checkbox">
                     <label for="model6">DEFAULT GRID</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model7" class="styled" onchange="toggleCursorTracker(this.checked);" type="checkbox" checked>
+                    <label for="model7">CURSOR LINES</label>
                   </div>
                 </div>
                 <div class="keynav">
@@ -207,7 +212,8 @@
               <tr><td><input class="shortcutkey text" value="S" data-index="3"></input></td><td>TOGGLE MOVE</td></tr>
               <tr><td><input class="shortcutkey text" value="O" data-index="4"></input></td><td>TOGGLE FOOD</td></tr>
               <tr><td><input class="shortcutkey text" value="N" data-index="5"></input></td><td>TOGGLE NAME</td></tr>
-              <tr><td><input class="shortcutkey text" value="Q" data-index="6"></input></td><td>FREE SPEC</td></tr>
+              <tr><td><input class="shortcutkey text" value="L" data-index="6"></input></td><td>LEADERBOARD</td></tr>
+              <tr><td><input class="shortcutkey text" value="Q" data-index="7"></input></td><td>FREE SPEC</td></tr>
             </tbody>
           </table>
         </div>
@@ -222,9 +228,10 @@
       <canvas id="minimapTeam" width="250" height="250"></canvas>
       <canvas id="snowing"></canvas>
       <div id="LBCOPY">
+         <div>IGARIO</div>
          <div id="LBCOPYC"></div>
       </div>
-      <div id="GAMEDATA" unselectable="on" class="unselectable"><span id="pac"></span><span id="ghost"></span><span id="FPS"></span></div>
+      <div id="GAMEDATA" unselectable="on" class="unselectable"><span id="FPS"></span><span id="pac"></span><span id="ghost"></span></div>
       <div id="CHATBOX" style="display:none">
         <div id="CHATBOXCONTENTDIV">
           <div id="CHATBOXCONTENT">
