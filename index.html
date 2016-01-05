@@ -54,7 +54,6 @@
                         <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" onchange="checkNameEmpty(this.value);" autofocus />
                         <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());">
                            <option selected value="" data-itr="gamemode_ffa">FFA</option>
-                           <option value=":teams" data-itr="gamemode_teams">TEAM</option>
                            <option value=":experimental" data-itr="gamemode_experimental">EXPER</option>
                            <option value=":party" data-itr="party">PARTY</option>
                         </select>
@@ -165,7 +164,7 @@
                     <label for="model4">RAINBOW FOOD</label>
                   </div>
                   <div class="checkbox checkbox-info MODECHECK">
-                    <input id="model3" class="styled" onchange="snowingEffect(this.checked);" type="checkbox" checked>
+                    <input id="model3" class="styled" onchange="snowingEffect(this.checked);" type="checkbox">
                     <label for="model3">SNOWING</label>
                   </div>
                 </div>
@@ -185,6 +184,10 @@
                   <div class="checkbox checkbox-info MODECHECK">
                     <input id="model7" class="styled" onchange="toggleCursorTracker(this.checked);" type="checkbox" checked>
                     <label for="model7">CURSOR LINES</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model8" class="styled" onchange="toggleTextShadow(this.checked);" type="checkbox">
+                    <label for="model8">TEXT SHADOW</label>
                   </div>
                 </div>
                 <div class="keynav">
@@ -231,7 +234,7 @@
          <div>IGARIO</div>
          <div id="LBCOPYC"></div>
       </div>
-      <div id="GAMEDATA" unselectable="on" class="unselectable"><span id="FPS"></span><span id="pac"></span><span id="ghost"></span></div>
+      <div id="GAMEDATA" unselectable="on" class="unselectable"><span id="FPS"></span><span id="pieces"></span><br/><span id="pac"></span><span id="ghost"></span></div>
       <div id="CHATBOX" style="display:none">
         <div id="CHATBOXCONTENTDIV">
           <div id="CHATBOXCONTENT">
