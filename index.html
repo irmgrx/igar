@@ -46,11 +46,7 @@
                <div class="tab-content">
                   <form role="form" id="HOME" class="tab-pane fade in active">
                      <div class="clearfix" style="margin-top:15px;">
-                        <select id="teamTag" class="myform-control" onchange="" style="padding:5px;">
-                           <option selected value="">TAG</option>
-                           <option value="XX ">XX</option>
-                           <option value="OO ">OO</option>
-                        </select>
+                        <input id="teamTag" class="myform-control" placeholder=" TAG" maxlength="6" style="padding:5px;"/>
                         <input id="nick" class="myform-control" placeholder="NICK" maxlength="15" onchange="checkNameEmpty(this.value);" autofocus />
                         <select id="gamemode" class="myform-control" onchange="setGameMode($(this).val());">
                            <option selected value="" data-itr="gamemode_ffa">FFA</option>
@@ -170,10 +166,6 @@
                 </div>
                 <div class="behind">
                   <div class="checkbox checkbox-info MODECHECK">
-                    <input id="model1" class="styled" type="checkbox" onchange="setAcid(this.checked);">
-                    <label for="model1">ACID MODE</label>
-                  </div>
-                  <div class="checkbox checkbox-info MODECHECK">
                     <input id="model5" class="styled" onchange="toggleTransparent(this.checked);" type="checkbox" checked>
                     <label for="model5">TRANSPARENT</label>
                   </div>
@@ -192,6 +184,10 @@
                   <div class="checkbox checkbox-info MODECHECK">
                     <input id="model9" class="styled" onchange="toggleAutoZoom(this.checked);" type="checkbox">
                     <label for="model9">AUTO ZOOM</label>
+                  </div>
+                  <div class="checkbox checkbox-info MODECHECK">
+                    <input id="model10" class="styled" onchange="toggleHideBots(this.checked);" type="checkbox">
+                    <label for="model10">CHECK/HIDE BOT</label>
                   </div>
                 </div>
                 <div class="keynav">
@@ -231,6 +227,7 @@
           <button class="MYBTN btn btn-warning" style="width:48%" onclick="cancleShortCutPanel();">CANCLE</button>
         </div>
       </div>
+      <canvas id="bgcanvas" width="800" height="600"></canvas>
       <canvas id="canvas" width="800" height="600"></canvas>
       <canvas id="minimap" width="250" height="250"></canvas>
       <canvas id="minimapData" width="250" height="250"></canvas>
